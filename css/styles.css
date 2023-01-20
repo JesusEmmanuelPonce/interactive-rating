@@ -18,7 +18,7 @@ main {
     padding: 15px;
 }
 
-.wrapper {
+.wrapper-rating {
     background: var(--dark-blue);
     border-radius: 15px;
     color: var(--white);
@@ -27,7 +27,7 @@ main {
     width: 100%;
 }
 
-.wrapper__picture {
+.wrapper-rating__picture {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -39,17 +39,17 @@ main {
     width: 3rem;
 }
 
-.wrapper h1 {
+.wrapper-rating h1 {
     font-size: 1.5rem;
     margin: 0;
 }
 
-.wrapper p {
+.wrapper-rating p {
     line-height: 150%;
     font-size: .9rem;
 }
 
-.wrapper ul {
+.wrapper-rating ul {
     display: flex;
     justify-content: space-between;
 
@@ -59,7 +59,7 @@ main {
     padding: 0;
 }
 
-.wrapper ul li {
+.wrapper-rating ul li {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -72,16 +72,16 @@ main {
     width: 2.7rem;
 }
 
-.wrapper ul li.active {
+.wrapper-rating ul li.active {
     background-color: var(--medium-grey);
 }
 
-.wrapper ul li:hover {
+.wrapper-rating ul li:hover {
     background-color: var(--orange);
     cursor: pointer;
 }
 
-.wrapper ul li > button {
+.wrapper-rating ul li > button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -89,13 +89,15 @@ main {
     margin: 0 !important;
     padding: 0 !important;
     line-height: 0;
+    height: 2.7rem;
+    width: 2.7rem;
 }
 
-.wrapper ul li > button:focus {
+.wrapper-rating ul li > button:focus {
     outline: none;
 }
 
-.wrapper button.wrapper__btn {
+.wrapper-rating button.wrapper-rating__btn {
     background-color: var(--orange);
     border: none;
     border-radius: 1.5rem;
@@ -109,11 +111,27 @@ main {
     width: 100%;
 }
 
-.wrapper button.wrapper__btn:hover {
+.wrapper-rating button.wrapper-rating__btn:hover {
     background-color: var(--white);
     color: var(--orange);
 }
 
-.wrapper button.wrapper__btn:focus {
+.wrapper-rating button.wrapper-rating__btn:focus {
     outline: none;
+}
+
+.wrapper-selected-rate {
+    background: var(--dark-blue);
+    border-radius: 15px;
+    color: var(--white);
+    text-align: center;
+    padding: 1.78rem;
+}
+
+.wrapper-selected-rate__picture img {
+    width: 100px;
+}
+
+.wrapper-selected-rate__selected {
+    
 }

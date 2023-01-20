@@ -14,9 +14,12 @@
     </head>
     <body>
         <main>
-            <section class="wrapper">
+            <section
+                id="wrapper-rating"
+                class="wrapper-rating"
+            >
 
-                <picture class="wrapper__picture">
+                <picture class="wrapper-rating__picture">
                     <img src="images/icon-star.svg" alt="star">
                 </picture>
 
@@ -25,34 +28,57 @@
 
                 <ul>
                     <li class="active">
-                        <button>
+                        <button
+                            class="btn-rating"
+                            value="1"
+                        >
                             1
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button
+                            class="btn-rating"
+                            value="2"
+                        >
                             2
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button
+                            class="btn-rating"
+                            value="3"
+                        >
                             3
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button
+                            class="btn-rating"
+                            value="4"
+                        >
                             4
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button
+                            class="btn-rating"
+                            value="5"
+                        >
                             5
                         </button>
                     </li>
                 </ul>
 
-                <button class="wrapper__btn">SUBMIT</button>
+                <button
+                    id="btn-submit"
+                    class="wrapper-rating__btn"
+                    type="button"
+                >
+                    SUBMIT
+                </button>
             </section>
         </main>
     </body>
+
+    <script src="js/index.js"></script>
 </html>
