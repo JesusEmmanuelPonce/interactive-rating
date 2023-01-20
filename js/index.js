@@ -8,7 +8,13 @@ const wrapperSelectedRate = document.getElementById("wrapper-selected-rate");
 let rateValue = 0;
 
 buttons.forEach((button) => {
+
     button.addEventListener("click", element => {
+
+        const elementSelect = element.target.parentElement;
+
+        elementSelect.classList.add("active");
+
         rateValue = element?.target.value;
         localStorage.setItem("rate", rateValue);
         btnSubmit.disabled = false;
