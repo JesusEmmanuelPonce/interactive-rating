@@ -11,11 +11,14 @@ buttons.forEach((button) => {
     button.addEventListener("click", element => {
         rateValue = element?.target.value;
         localStorage.setItem("rate", rateValue);
+        btnSubmit.disabled = false;
     })
 })
 
 btnSubmit.addEventListener("click", onSubmit);
 
 function onSubmit() {
-    window.location.href = "pages/rate.html";
+    if(Number(btnSubmit) !== 0){
+        window.location.href = "pages/rate.html";
+    }
 }
