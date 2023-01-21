@@ -21,7 +21,7 @@ Users should be able to:
 
 ## Deployment project link
 
-- [Netlify](https://delightful-chebakia-d626ab.netlify.app/)
+- [Netlify](https://ubiquitous-naiad-30ba7c.netlify.app/)
 
 ### Built with
 
