@@ -1,30 +1,27 @@
 
-const buttons = document.querySelectorAll(".btn-rating");
-const btnSubmit = document.getElementById("btn-submit");
+window.addEventListener("load", () => {
+    const buttons = document.querySelectorAll(".btn-rating");
+    const btnSubmit = document.getElementById("btn-submit");
 
-const wrapperRating = document.getElementById("wrapper-rating");
-const wrapperSelectedRate = document.getElementById("wrapper-selected-rate");
+    function addClass() {
+        buttons.forEach(button => {
+            button.classList.remove('active');
 
-let rateValue = 0;
+            this.classList.add('active');
+        });
 
-buttons.forEach((button) => {
-
-    button.addEventListener("click", element => {
-
-        const elementSelect = element.target.parentElement;
-
-        elementSelect.classList.add("active");
-
-        rateValue = element?.target.value;
-        localStorage.setItem("rate", rateValue);
+        rateValue = this.value;
+        localStorage.setItem("rate", this.value);
         btnSubmit.disabled = false;
-    })
-})
-
-btnSubmit.addEventListener("click", onSubmit);
-
-function onSubmit() {
-    if(Number(btnSubmit) !== 0){
-        window.location.href = "pages/rate.html";
     }
-}
+
+    buttons.forEach(button => button.addEventListener('click', addClass));
+
+    btnSubmit.addEventListener("click", onSubmit);
+
+    function onSubmit() {
+        if(btnSubmit){
+            window.location.href = "pages/rate.html";
+        }
+    }
+})
