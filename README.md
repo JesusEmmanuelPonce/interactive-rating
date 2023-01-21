@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Interactive rating component
 
-![Design preview for the Product preview card component coding challenge](./images/desktop-design.jpg)
+![Design preview for the Interactive rating component coding challenge](./images/desktop-design.jpg)
 
 ## Welcome! 👋
 
